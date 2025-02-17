@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./fonts/Inter.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0 0 0 0;
+    font-family: Inter, sans-serif;
+}
+
+header {
+    background-color: rgb(27, 84, 221);
+    color: white;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    height: max-content;
+}
+
+header img {
+    height: 270px;
+    width: 480px;
+}
+
+header h1 {
+    width: 480px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+header h2.logo {
+    text-align: center;
+    font-family: Impact;
+    font-size: 31.58px;
+    font-weight: 900;
+    line-height: 27.63px;
+}
+
+header h2.factstring {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    width: 480px;
+}
+
+header .substring {
+    text-align: center;
+    width: 480px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 calc(1/100 * 100%) 0;
+}
+
+header button {
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(26, 32, 40);
+    width: 110px;
+    height: 42px;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+main .block {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 480px;
+    aspect-ratio: 2/1;
+    margin: calc(32/1963 * 100%) calc(64/1963 * 100%) calc(32/1963 * 100%) calc(64/1963 * 100%);
+}
+
+main .block img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+main .info-block {
+    margin-left: 20px;
+}
+
+main .info-block h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+main .info-block p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+main .info-block a {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(27, 84, 221);
+    text-decoration: none;
+}
+
+main button.bttn {
+    background-color: rgb(27, 84, 221);
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    width: 110px;
+    height: 42px;
+    align-items: center;
+    margin: calc(16/1963 * 100%) 0 calc(32/1963 * 100%) 0;
+}
+
+footer {
+    background-color: rgb(232, 232, 232);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    width: max-width;
+    height: auto;
+}
+
+footer .fl {
+    display: flex;
+    gap: 20px;
+}
+
+footer h2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .copy-info {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 100%;
+        height: auto;
+    }
+
+    header h1, header h2.factstring, header .substring {
+        width: 100%;
+    }
+
+    main .block {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 calc(10/100 * 100%) 0;
+    }
+
+    main .block img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .info-block {
+        margin-left: 0;
+        text-align: center;
+    }
+}
