@@ -1,2 +1,2 @@
-# virtual-tech
+# visual-tech
 ИП-312 Яненко Владимир Павлович
